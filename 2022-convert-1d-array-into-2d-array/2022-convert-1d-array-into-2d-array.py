@@ -1,7 +1,7 @@
 class Solution:
     def construct2DArray(self, original: List[int], m: int, n: int) -> List[List[int]]:
-        if m==1 and n ==1 and len(original) > 1:
-            return []
+        # if m==1 and n ==1 and len(original) > 1:
+        #     return []
         if n*m != len(original):
             return []
         x = []
