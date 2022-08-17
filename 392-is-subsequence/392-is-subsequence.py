@@ -4,12 +4,12 @@ class Solution:
             return True
         if len(s) > len(t):
             return False
-        l = ""
+        l = 0
         j = 0
         for i in range(len(t)):
             if j < len(s):
                 if t[i] == s[j]:
-                    l += t[i]
+                    l += 1
                     j += 1
-        return l == s
+        return l == len(s)
                            
