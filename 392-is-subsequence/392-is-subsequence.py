@@ -4,7 +4,8 @@ class Solution:
             return True
         if len(s) > len(t):
             return False
-        l, j = "", 0
+        l = ""
+        j = 0
         for i in range(len(t)):
             if j < len(s):
                 if t[i] == s[j]:
