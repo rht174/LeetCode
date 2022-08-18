@@ -3,7 +3,7 @@ class Solution:
         x = [0] * len(nums)
         ap = 1
         
-        if nums == x:
+        if nums == x or nums.count(0) > 1:
             return x
         
         for i in nums:
@@ -15,8 +15,6 @@ class Solution:
             for i, j in enumerate(nums):
                 if j == 0:
                     x[i] = ap
-            return x
-        elif nums.count(0) > 1:
             return x
                 
         for i,j in enumerate(nums):
